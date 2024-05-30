@@ -25,10 +25,7 @@ class WebScrape:
                 for link in event.find_all('a', href = True):
                     event_links.append(baseurl + link['href'])
 
-            print(len(event_links))
-
             for link in event_links:
-                print(link)
                 event_link = link
 
                 response = requests.get(event_link, headers=headers)

@@ -19,8 +19,6 @@ The below the following programs has to be installed in order to use the applica
    ```
    docker-compose up
    ```
-  
-
-   
-
+# Results
+![Data Inserted in Rows](image.png)
 
