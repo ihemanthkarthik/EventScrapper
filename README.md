@@ -12,9 +12,9 @@ The below the following programs has to be installed in order to use the applica
 1. Install the prerequisites mentioned above and setup the applications
 2. Clone this repository to your local machine.
 3. Open the Command Line in the EventScrapper folder and run the below command
-  ```
-  docker-compose build
-  ```
+    ```
+    docker-compose build
+    ```
 4. Run the below command to run the application
    ```
    docker-compose up
