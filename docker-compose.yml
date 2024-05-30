@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  postgres-1:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: Events
+    networks:
+      - my_network
+
+  myapp:
+    build: .
+    depends_on:
+      - postgres-1
+    environment:
+      DB_HOST: postgres-1
+      DB_NAME: Events
+      DB_USER: postgres
+      DB_PASSWORD: admin
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge
